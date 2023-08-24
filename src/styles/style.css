@@ -86,7 +86,8 @@ button {
 }
 
 .project {
-  max-width: 300px;
+  max-width: 600px;
+  border: 1px 0 solid white;
 }
 
 .project img {
