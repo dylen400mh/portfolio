@@ -10,6 +10,10 @@
   margin-top: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -41,6 +45,12 @@ button {
   background-image: url("../icons/icons8-menu.svg");
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .home {
   display: flex;
   flex-direction: column;
@@ -48,6 +58,7 @@ button {
   align-items: center;
   text-align: center;
   height: 100vh;
+  max-width: 600px;
 }
 
 .about {
@@ -55,6 +66,7 @@ button {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  max-width: 600px;
 }
 
 .skills {
@@ -83,6 +95,7 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 600px;
 }
 
 .project {
@@ -105,10 +118,50 @@ button {
   gap: 1rem;
 }
 
-.project button {
+.project button,
+form button {
   background-color: rgb(196, 193, 193);
   color: black;
   font-size: 16px;
   padding: 0.5rem;
   border-radius: 8px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  gap: 0.5rem;
+}
+
+form textarea {
+  height: 8rem;
+}
+
+form input,
+form textarea {
+  background-color: white;
+  color: black;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem;
+}
+
+footer nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+footer i {
+  font-size: 32px;
 }
