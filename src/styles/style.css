@@ -202,6 +202,12 @@ main {
   font-size: 12px;
 }
 
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
 .projects {
   display: flex;
   flex-direction: column;
@@ -258,7 +264,6 @@ form button {
 
 .project button {
   transition: transform 0.1s ease-out;
-  
 }
 
 .project button:hover {
@@ -322,5 +327,61 @@ footer img:hover {
 
   .main-menu {
     display: block;
+  }
+}
+
+@media (min-width: 1200px) {
+  .projects {
+    max-width: 1000px;
+  }
+
+  .project {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto 1fr;
+    max-width: 1000px;
+    gap: 1rem;
+  }
+
+  .project h3 {
+    text-align: center;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+  }
+
+  .project p {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+  }
+
+  .project-buttons {
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+  }
+
+  .image-container {
+    grid-row: 1 / 4;
+    grid-column: 1 / 2;
+  }
+
+  .project:nth-child(even) .image-container {
+    grid-row: 1 / 4;
+    grid-column: 2 / 3;
+  }
+
+  .project:nth-child(even) h3 {
+    text-align: center;
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+  }
+
+  .project:nth-child(even) p {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+  }
+
+  .project:nth-child(even) .project-buttons {
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
   }
 }
