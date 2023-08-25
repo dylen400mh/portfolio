@@ -52,7 +52,16 @@ form.addEventListener("submit", (e) => {
   Form.validateFields();
 
   if (form.checkValidity()) {
-    Form.displayConfirmation(); // Display confirmation message
-    form.reset(); // Reset the form fields
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(new FormData(form)).toString(),
+    })
+      .then(() => {
+        console.log("then")
+        Form.displayConfirmation(); // Display confirmation message
+        form.reset(); // Reset the form fields
+      })
+      .catch((error) => alert(error));
   }
 });
