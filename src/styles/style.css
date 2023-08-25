@@ -111,6 +111,12 @@ main {
   text-align: center;
   height: 100vh;
   max-width: 600px;
+  opacity: 0;
+  transition: opacity 3s;
+}
+
+.home.visible {
+  opacity: 100%;
 }
 
 .home button {
