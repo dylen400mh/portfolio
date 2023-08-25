@@ -249,3 +249,11 @@ footer i {
   font-size: 32px;
   color: white;
 }
+
+footer a, footer img {
+  transition: transform 0.3s ;
+}
+
+footer a:hover, footer img:hover {
+  transform: rotate(360deg)
+}
