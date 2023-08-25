@@ -72,6 +72,14 @@ button {
   gap: 1rem;
 }
 
+.dropdown-menu li {
+  transition: transform 0.1s;
+}
+
+.dropdown-menu li:hover {
+  transform: translateY(-2px);
+}
+
 .dropdown-menu a {
   color: black;
 }
