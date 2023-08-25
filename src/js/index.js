@@ -58,7 +58,6 @@ form.addEventListener("submit", (e) => {
       body: new URLSearchParams(new FormData(form)).toString(),
     })
       .then(() => {
-        console.log("then")
         Form.displayConfirmation(); // Display confirmation message
         form.reset(); // Reset the form fields
       })
