@@ -113,6 +113,32 @@ main {
   max-width: 600px;
 }
 
+.home button {
+  color: white;
+  border: 3px solid white;
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+.home button:hover {
+  animation-duration: 0.5s;
+  animation-name: bounce;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-5px);
+  }
+}
+
 .about {
   display: flex;
   flex-direction: column;
@@ -250,10 +276,12 @@ footer i {
   color: white;
 }
 
-footer a, footer img {
-  transition: transform 0.3s ;
+footer a,
+footer img {
+  transition: transform 0.3s;
 }
 
-footer a:hover, footer img:hover {
-  transform: rotate(360deg)
+footer a:hover,
+footer img:hover {
+  transform: rotate(360deg);
 }
