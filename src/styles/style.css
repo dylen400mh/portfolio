@@ -303,6 +303,16 @@ form textarea {
   padding: 0.5rem;
 }
 
+.error {
+  display: none;
+  color: rgb(255, 133, 133);
+}
+
+.success {
+  display: none;
+  color: rgb(0, 216, 0);
+}
+
 footer nav {
   display: flex;
   justify-content: center;

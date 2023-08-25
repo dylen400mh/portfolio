@@ -1,3 +1,4 @@
+import Form from "./Form";
 import "../styles/style.css";
 
 const homeSection = document.querySelector(".home");
@@ -6,6 +7,8 @@ const hamburgerMenuButton = document.querySelector(".menu-button");
 const dropdownMenu = document.querySelector(".dropdown-menu");
 const closeMenuButton = document.querySelector(".close-menu-button");
 const menuLinks = dropdownMenu.querySelector("ul");
+
+const form = document.querySelector("form");
 
 function openMenu(e) {
   e.stopPropagation();
@@ -41,4 +44,15 @@ document.addEventListener("click", closeMenu);
 // Add visibility to home section shortly after page load
 window.addEventListener("load", () => {
   homeSection.classList.add("visible");
-})
+});
+
+// Form validation
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  Form.validateFields();
+
+  if (form.checkValidity()) {
+    Form.displayConfirmation(); // Display confirmation message
+    form.reset(); // Reset the form fields
+  }
+});
