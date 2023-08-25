@@ -5,7 +5,12 @@ const dropdownMenu = document.querySelector(".dropdown-menu");
 const closeMenuButton = document.querySelector(".close-menu-button");
 const menuLinks = dropdownMenu.querySelector("ul");
 
-function toggleMenu(e) {
+function openMenu(e) {
+    e.stopPropagation()
+  dropdownMenu.classList.add("visible");
+}
+
+function closeMenu(e) {
   e.stopPropagation();
 
   // Allows for smooth transition when closing
@@ -15,11 +20,11 @@ function toggleMenu(e) {
     }, 500);
   }
 
-  dropdownMenu.classList.toggle("visible");
+  dropdownMenu.classList.remove("visible");
 }
 
 // Opens menu
-hamburgerMenuButton.addEventListener("click", toggleMenu);
+hamburgerMenuButton.addEventListener("click", openMenu);
 
 // Prevents clicks on dropdown from closing the menu
 dropdownMenu.addEventListener("click", (e) => {
@@ -27,6 +32,6 @@ dropdownMenu.addEventListener("click", (e) => {
 });
 
 // Closes menu
-menuLinks.addEventListener("click", toggleMenu);
-closeMenuButton.addEventListener("click", toggleMenu);
-document.addEventListener("click", toggleMenu);
+menuLinks.addEventListener("click", closeMenu);
+closeMenuButton.addEventListener("click", closeMenu);
+document.addEventListener("click", closeMenu);
