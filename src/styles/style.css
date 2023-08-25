@@ -67,6 +67,7 @@ button {
   display: flex;
   justify-content: space-between;
   transition: transform 0.5s;
+  box-shadow: 5px 5px 15px 3px #000000;
 }
 
 .dropdown-menu ul {
@@ -109,6 +110,7 @@ button {
   background-color: var(--secondary);
   width: 100%;
   font-weight: 600;
+  box-shadow: 5px 5px 15px 3px #000000;
 }
 
 .main-menu ul {
@@ -256,6 +258,7 @@ form button {
 
 .project button {
   transition: transform 0.1s ease-out;
+  
 }
 
 .project button:hover {
