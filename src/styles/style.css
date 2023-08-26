@@ -15,6 +15,22 @@ body {
   color: white;
 }
 
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
 a {
   text-decoration: none;
 }
@@ -147,6 +163,10 @@ main {
 
 .home.visible {
   opacity: 100%;
+}
+
+.home h1 {
+  margin: 0;
 }
 
 .home button {
@@ -301,7 +321,6 @@ form textarea {
   box-sizing: border-box;
 }
 
-
 .error {
   display: none;
   color: rgb(255, 133, 133);
@@ -361,7 +380,7 @@ footer img:hover {
     grid-template-rows: auto 1fr;
   }
 
-  .about h1 {
+  .about h2 {
     grid-row: 1 / 2;
     grid-column: 1 / 3;
   }
