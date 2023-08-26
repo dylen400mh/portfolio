@@ -276,12 +276,6 @@ form button {
   transform: translateY(-3px);
 }
 
-.contact {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 form {
   display: flex;
   flex-direction: column;
