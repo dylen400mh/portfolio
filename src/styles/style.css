@@ -286,6 +286,7 @@ form {
 
 form textarea {
   height: 8rem;
+  resize: none;
 }
 
 form input,
