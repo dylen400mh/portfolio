@@ -278,9 +278,10 @@ form button {
 
 form {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   max-width: 600px;
-  gap: 0.5rem;
+  justify-content: center;
+  gap: 1rem;
 }
 
 form textarea {
@@ -295,7 +296,10 @@ form textarea {
   border: none;
   border-radius: 8px;
   padding: 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
 }
+
 
 .error {
   display: none;
@@ -305,6 +309,10 @@ form textarea {
 .success {
   display: none;
   color: rgb(0, 216, 0);
+}
+
+footer {
+  padding: 1rem;
 }
 
 footer nav {
