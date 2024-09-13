@@ -1,3 +1,3 @@
 # portfolio
 
-[Click to view my portfolio!](https://dylenbelanger.netlify.app/)
+This is my old portfolio. [Click here to view my new website!](https://dylenbelanger.com/)
